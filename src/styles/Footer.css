@@ -1,0 +1,161 @@
+.footer {
+    bottom: 0;
+    margin-top: 70px;
+    background-color: #FFC107;
+    color: #7B6E6E;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    .footer-address {
+        display: flex;
+        flex: 1;
+        text-align: center;
+
+        .about-us-footer {
+            width: 27%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 5%;
+
+            h3{
+                margin-bottom: 20px;
+            }
+
+
+            a{
+                color: #7B6E6E;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #544a29;
+            }
+        }
+
+        .participate-footer {
+            width: 35%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            h3{
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: #7B6E6E;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #544a29;
+            }
+
+            input {
+                background-color: #FFC107;
+                border-radius: 5px;
+                height: 25px;
+                margin-right: 5px;
+                padding: 15px 20px;
+                border: 1px solid #7B6E6E;
+            }
+
+            button {
+                border-radius: 5px;
+                height: 32px;
+                padding: 0 20px;
+                margin-top: 20px;
+                font-size: 15px;
+                background-color: #d6ae34;
+                color: #595a5e;
+                border: 1px solid #7B6E6E;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #FFC107;
+                color: #544a29;
+            }
+        }
+
+        .contact-footer {
+            width: 28%;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-right: 5%;
+
+            h3{
+                margin-bottom: 20px;
+            }
+
+            .contact-footer-text {
+                text-align: center;
+                margin-top: 2px;
+
+                a{
+                    color: #7B6E6E;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #544a29;
+                }
+            }
+
+            .contact-footer-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 15px;
+                margin-bottom: 5px;
+
+                .icon {
+                    font-size: 20px;
+                    margin: 0 15px;
+                    cursor: pointer;
+                }
+                .icon:hover{
+                    color: #8d5829;
+                }
+            }
+        }
+    }
+
+    .footer-developer {
+        text-align: center;
+        background-color: #F2BA12;
+
+        span{
+            color: #544a29;
+        }
+        h5{
+            margin-top: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-address {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .about-us-footer,
+    .participate-footer,
+    .contact-footer {
+      width: 90%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .contact-footer-icons {
+      flex-direction: row;
+    }
+  }

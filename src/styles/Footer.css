@@ -140,3 +140,22 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footer-address {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .about-us-footer,
+    .participate-footer,
+    .contact-footer {
+      width: 90%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .contact-footer-icons {
+      flex-direction: row;
+    }
+  }

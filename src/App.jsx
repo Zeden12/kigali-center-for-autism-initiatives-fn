@@ -3,6 +3,8 @@ import TopNav from './component/TopNav'
 import BottomNav from './component/BottomNav'
 import Hero from './component/Hero'
 import About from './component/About'
+import ProjectView from './component/ProjectPart'
+import Footer from './component/Footer'
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <BottomNav />
       <Hero />
       <About />
+      <ProjectView />
+      <Footer />
     </div>
   )
 }

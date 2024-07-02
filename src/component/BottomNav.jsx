@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const BottomNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,11 @@ const BottomNav = () => {
 
       <nav className={`font-poppins font-medium text-sm md:flex md:items-center md:gap-5 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
         <ul className='flex flex-col md:flex-row md:gap-5'>
-          <li className=' '><a href="#" className='hover:text-gray-700'>Home</a></li>
-          <li className=' '><a href="#" className='hover:text-gray-700'>Who We Are</a></li>
-          <li className=' '><a href="#" className='hover:text-gray-700'>Projects</a></li>
-          <li className=' '><a href="#" className='hover:text-gray-700'>Blog</a></li>
-          <li className=' '><a href="#" className='hover:text-gray-700'>Contact Us</a></li>
+          <li className=' '><a href={"#hero"} className='hover:text-gray-700'>Home</a></li>
+          <li className=' '><a href={"#about"} className='hover:text-gray-700'>Who We Are</a></li>
+          <li className=' '><a href={"#project"} className='hover:text-gray-700'>Projects</a></li>
+          <li className=' '><Link to={""} className='hover:text-gray-700'>Blog</Link></li>
+          <li className=' '><Link to={""} className='hover:text-gray-700'>Contact Us</Link></li>
           <li className=' '><button className='bg-yellow-500 text-white px-5 py-2 rounded-md hover:bg-yellow-600 transition'>Donate</button></li>
         </ul>
       </nav>

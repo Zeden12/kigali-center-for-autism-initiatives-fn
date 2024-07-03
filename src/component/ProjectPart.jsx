@@ -1,10 +1,12 @@
 import React from "react";
 import "../styles/Project.css";
 import about1 from "../assets/about1.svg";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-const ProjectView = () => {
+const ProjectPart = () => {
   return (
-    <div className="project-view-container">
+    <div id="project" className="project-view-container">
       <h1>
         Our <span>Project</span>
       </h1>
@@ -59,8 +61,11 @@ const ProjectView = () => {
           </div>
         </div>
       </div>
+      <Link to={"/projects"}
+       className='mt-[20px] text-[18px] flex justify-center items-center gap-2 text-[#FFC107] font-poppins hover:text-orange-300'>View More Project <FaArrowRight />
+       </Link>
     </div>
   );
 };
 
-export default ProjectView;
+export default ProjectPart;

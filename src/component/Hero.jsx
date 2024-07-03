@@ -23,7 +23,7 @@ const Hero = () => {
   
       
   return (
-    <div style={bg} className=' '>
+    <div id='hero' style={bg} className=' '>
          <div style={overlayStyle} className='mx-auto px-4 flex flex-col justify-center items-center text-center font-poppins'>
             <h1 className='text-white font-semibold text-[40px]'>
             Kigali Center for <span className='text-[#FFC107]'>Autism</span> Initiatives

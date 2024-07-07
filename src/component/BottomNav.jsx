@@ -1,37 +1,44 @@
 import React, { useState } from 'react';
-import { IoMenu, IoClose } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 
 const BottomNav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsOpen(!isOpen);
   }
 
   return (
-    <div className='flex justify-between items-center mx-auto px-4 py-4 bg-white shadow-md'>
-      <div className='flex items-center'>
-        <h1 className='font-poppins font-bold text-lg'>KCA</h1>
-      </div>
-
-      <div className='relative'>
-        <div onClick={toggleMenu} className='md:hidden text-2xl cursor-pointer'>
-          {isMenuOpen ? <IoClose /> : <IoMenu />}
+    <div className="sticky bg-white top-[70px] z-10 flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-4">
+            <h1 className="font-poppins font-bold text-[20px]">
+                KCA
+            </h1>
+            <nav>
+                <ul className={`fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:static lg:flex lg:flex-row lg:gap-[50px] lg:translate-x-0 lg:bg-transparent lg:justify-end lg:items-center font-poppins`}>
+                    <li className="lg:hidden absolute top-4 right-4">
+                        <button onClick={toggleMenu}>
+                            <IoClose className='text-[30px]'/>
+                        </button>
+                    </li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Home</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Who We Are</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Projects</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Blog</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Contact Us</a></li>
+                    <li className="my-4 lg:my-0  lg:hidden bg-[#FFC107] text-white font-outfit px-[30px] py-[10px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]"><a href="#">Donate</a></li>
+                </ul>
+            </nav>
+            <button className="hidden lg:block bg-[#FFC107] text-white font-outfit px-[30px] py-[10px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]">
+                Donate
+            </button>
+            <div className="lg:hidden">
+                <button onClick={toggleMenu}>
+                    <IoMenu className='text-[30px]'/>
+                </button>
+            </div>
         </div>
-      </div>
-
-      <nav className={`font-poppins font-medium text-sm md:flex md:items-center md:gap-5 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-        <ul className='flex flex-col md:flex-row md:gap-5'>
-          <li className=' '><a href={"#hero"} className='hover:text-gray-700'>Home</a></li>
-          <li className=' '><a href={"#about"} className='hover:text-gray-700'>Who We Are</a></li>
-          <li className=' '><a href={"#project"} className='hover:text-gray-700'>Projects</a></li>
-          <li className=' '><Link to={""} className='hover:text-gray-700'>Blog</Link></li>
-          <li className=' '><Link to={""} className='hover:text-gray-700'>Contact Us</Link></li>
-          <li className=' '><button className='bg-yellow-500 text-white px-5 py-2 rounded-md hover:bg-yellow-600 transition'>Donate</button></li>
-        </ul>
-      </nav>
-    </div>
   )
 }
 

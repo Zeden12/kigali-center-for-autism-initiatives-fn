@@ -11,7 +11,7 @@ const BottomNav = () => {
   }
 
   return (
-    <div className="sticky bg-white top-[50px] z-10 flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-[7px]">
+    <div className="sticky bg-[#E9E9E9] top-[50px] z-10 flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-[7px]">
             <h1 className="font-poppins font-bold text-[20px]">
                 KCA
             </h1>

@@ -10,60 +10,72 @@ const ProjectPart = () => {
       <h1>
         Our <span>Project</span>
       </h1>
-      <p>Our organization strives to create a world where people with autism can thrive and reach their fullest potential.</p>
+      <p>
+        Our organization strives to create a world where people with autism can
+        thrive and reach their fullest potential.
+      </p>
       <div className="project-view">
         <div className="project-card">
-        <img src={about1} alt="project image" />
+          <img src={about1} alt="project image" />
           <div className="project-content">
             <div className="date-donasi">
-            <p>22 June 2024</p>
+              <p>22 June 2024</p>
               <h5>Musanze, North</h5>
             </div>
             <div className="project-description">
               <h2>Kigali Autism Forum</h2>
               <p>
-              We are dedicated to fostering a supportive and inclusive environment for individuals with autism. <a href="#">Read More</a>
+                We are dedicated to fostering a supportive and inclusive
+                environment for individuals with autism.{" "}
+                <a href="#">Read More</a>
               </p>
               <button>Donate Now</button>
             </div>
           </div>
         </div>
         <div className="project-card">
-        <img src={about1} alt="project image" />
+          <img src={about1} alt="project image" />
           <div className="project-content">
             <div className="date-donasi">
-            <p>22 June 2024</p>
+              <p>22 June 2024</p>
               <h5>Muhanga, South</h5>
             </div>
             <div className="project-description">
               <h2>Kigali Autism Forum</h2>
               <p>
-              We are dedicated to fostering a supportive and inclusive environment for individuals with autism. <a href="#">Read More</a>
+                We are dedicated to fostering a supportive and inclusive
+                environment for individuals with autism.{" "}
+                <a href="#">Read More</a>
               </p>
               <button>Donate Now</button>
             </div>
           </div>
         </div>
         <div className="project-card">
-        <img src={about1} alt="project image" />
+          <img src={about1} alt="project image" />
           <div className="project-content">
             <div className="date-donasi">
-            <p>22 June 2024</p>
+              <p>22 June 2024</p>
               <h5>Kigali, Gasanze</h5>
             </div>
             <div className="project-description">
               <h2>Kigali Autism Forum</h2>
               <p>
-              We are dedicated to fostering a supportive and inclusive environment for individuals with autism. <a href="#">Read More</a>
+                We are dedicated to fostering a supportive and inclusive
+                environment for individuals with autism.{" "}
+                <a href="#">Read More</a>
               </p>
               <button>Donate Now</button>
             </div>
           </div>
         </div>
       </div>
-      <Link to={"/projects"}
-       className='mt-[20px] text-[18px] flex justify-center items-center gap-2 text-[#FFC107] font-poppins hover:text-orange-300'>View More Project <FaArrowRight />
-       </Link>
+      <Link
+        to={"/projects"}
+        className="mt-[20px] text-[18px] flex justify-center items-center gap-2 text-[#FFC107] font-poppins hover:text-orange-300"
+      >
+        View More Project <FaArrowRight />
+      </Link>
     </div>
   );
 };

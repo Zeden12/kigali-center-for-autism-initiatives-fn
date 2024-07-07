@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectPage = () => {
   return (
-    <div id="project" className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div id="projectpage" className="max-w-sm rounded overflow-hidden shadow-lg">
       <img
         className="w-full"
         src="https://source.unsplash.com/random"

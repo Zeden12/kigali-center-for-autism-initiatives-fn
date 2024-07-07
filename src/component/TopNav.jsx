@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg"
 
 const TopNav = () => {
   return (
-    <div className='sticky top-0 z-10 bg-[#FFC107] flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-4'>
+    <div className='sticky top-0 z-10 bg-[#FFC107] flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-[5px]'>
         <div>
            <img src={logo} alt="logo"  className='w-[40px] h-[40px]'/>
         </div>

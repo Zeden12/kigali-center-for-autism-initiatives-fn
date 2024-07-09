@@ -11,7 +11,7 @@
     .footer-address {
         display: flex;
         flex: 1;
-        text-align: center;
+        text-align: left;
 
         .about-us-footer {
             width: 27%;
@@ -34,7 +34,7 @@
         }
 
         .participate-footer {
-            width: 35%;
+            width: 40%;
             margin-top: 40px;
             margin-bottom: 40px;
 
@@ -77,7 +77,7 @@
         }
 
         .contact-footer {
-            width: 28%;
+            width: 24%;
             padding: 2px;
             display: flex;
             flex-direction: column;
@@ -90,7 +90,6 @@
             }
 
             .contact-footer-text {
-                text-align: center;
                 margin-top: 2px;
 
                 a{
@@ -105,8 +104,6 @@
             .contact-footer-icons {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
-                align-items: center;
                 width: 100%;
                 height: 100%;
                 margin-top: 15px;
@@ -150,7 +147,7 @@
     .about-us-footer,
     .participate-footer,
     .contact-footer {
-      width: 90%;
+      width: 100%;
       margin-left: 0;
       margin-right: 0;
     }

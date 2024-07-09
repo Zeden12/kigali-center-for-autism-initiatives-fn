@@ -16,10 +16,10 @@ const About = () => {
       };
   return (
     <div id='about' className='mx-auto px-4 mt-[50px] flex flex-col md:px-[2.5rem] justify-center items-center text-center'>
-        <h1 className='font-poppins text-[30px] font-bold'>Who We <span className='text-[#FFC107]'>Are</span></h1>
-        <p className='font-poppins text-[13px]'>Our organization strives to create a world where people with autism can thrive and reach their fullest potential.</p>
+        <h1 className='font-poppins text-[30px] font-bold mb-4'>Who We <span className='text-[#FFC107]'>Are</span></h1>
+        <p className='font-poppins text-[16px] max-w-3xl'>Our organization strives to create a world where people with autism can thrive and reach their fullest potential.</p>
 
-       <div className='mt-[50px] justify-items-cente grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mx-auto md:px-4 '>
+       <div className='mt-[30px] justify-items-cente grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mx-auto md:px-4 '>
        <div style={bg} className=' mt-[30px] rounded-[10px] bg-black text-white hover:transition-transform hover:scale-105 duration-300  '>
             <div  className='w-[300px] h-[400px] px-4 relative top-[130px] text-left'>
                 <h1 className='leading-[27px] font-teko text-[30px] font-semibold'>OUR<br />MISSION</h1>

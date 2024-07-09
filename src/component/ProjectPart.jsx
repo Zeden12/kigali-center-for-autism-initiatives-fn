@@ -70,12 +70,6 @@ const ProjectPart = () => {
           </div>
         </div>
       </div>
-      <Link
-        to={"/projects"}
-        className="mt-[20px] text-[18px] flex justify-center items-center gap-2 text-[#FFC107] font-poppins hover:text-orange-300"
-      >
-        View More Project <FaArrowRight />
-      </Link>
     </div>
   );
 };

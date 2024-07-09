@@ -3,6 +3,7 @@ import TopNav from "./component/TopNav.jsx"
 import BottomNav from "./component/BottomNav.jsx"
 import Hero from "./component/Hero.jsx"
 import About from "./component/About.jsx"
+import Footer from './component/Footer.jsx'
 import ProjectPart from './component/ProjectPart.jsx'
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
     <BottomNav />
     <Hero />
     <About />
-    {/* <ProjectPart /> */}
+    <ProjectPart />
+    <Footer />
    </div>
   )
 }

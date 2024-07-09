@@ -35,7 +35,7 @@
 .project-card {
     background-color: rgb(255, 255, 255);
     border: 1px solid #FFC107;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 31%;
@@ -48,7 +48,7 @@
     height: 170px;
     object-fit: cover;
     margin-top: 1px 0 0 0;
-    border-radius: 15px;
+    border-radius: 7px;
 }
 
 .project-content {

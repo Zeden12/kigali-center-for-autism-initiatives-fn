@@ -3,6 +3,7 @@ import "../styles/Project.css";
 import about1 from "../assets/about1.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import ProjectPage from "./ProjectPage";
 
 const ProjectPart = () => {
   return (
@@ -70,6 +71,7 @@ const ProjectPart = () => {
           </div>
         </div>
       </div>
+      <button className='text-[16px] flex justify-center items-center gap-2 text-[#FFC107] font-poppins ml-auto mr-28 mt-10 underline'><a href="">View More Projects</a><FaArrowRight /></button>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ProjectPart = () => {
   return (
-    <div id="project" className="project-view-container">
+    <div id="project" className="project-view-container font-poppins">
       <h1>
         Our <span>Project</span>
       </h1>

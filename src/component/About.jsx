@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div id='about' className='mx-auto px-4 mt-[50px] flex flex-col md:px-[2.5rem] justify-center items-center text-center'>
         <h1 className='font-poppins text-[30px] font-bold mb-4'>Who We <span className='text-[#FFC107]'>Are</span></h1>
-        <p className='font-poppins text-[16px] max-w-3xl'>Our organization strives to create a world where people with autism can thrive and reach their fullest potential.</p>
+        <p className='font-poppins max-w-3xl'>Our organization strives to create a world where people with autism can thrive and reach their fullest potential.</p>
 
        <div className='mt-[30px] justify-items-cente grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mx-auto md:px-4 '>
        <div style={bg} className=' mt-[30px] rounded-[10px] bg-black text-white hover:transition-transform hover:scale-105 duration-300  '>

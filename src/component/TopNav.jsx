@@ -10,7 +10,7 @@ const TopNav = () => {
         <div>
            <img src={logo} alt="logo"  className='w-[40px] h-[40px]'/>
         </div>
-        <div className='flex gap-4 text-[13px]'>
+        <div className=' gap-4 text-[13px] hidden md:flex'>
            <p>example@gmail.com</p>
            <p>+250780000000</p>
         </div>

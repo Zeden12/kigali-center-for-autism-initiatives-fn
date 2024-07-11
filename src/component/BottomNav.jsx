@@ -30,7 +30,7 @@ const BottomNav = () => {
                     <li className="my-4 lg:my-0  lg:hidden bg-[#FFC107] text-white font-outfit px-[30px] py-[7px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]"><a href="#">Donate</a></li>
                 </ul>
             </nav>
-            <button className="hidden lg:block bg-[#FFC107] text-white font-outfit px-[30px] py-[7px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]">
+            <button className="hidden lg:block bg-[#FFC107] text-white font-outfit px-[30px] py-[7px] rounded-[5px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]">
                 Donate
             </button>
             <div className="lg:hidden">

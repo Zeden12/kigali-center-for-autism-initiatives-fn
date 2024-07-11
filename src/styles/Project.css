@@ -14,10 +14,10 @@
 }
 
 .project-view-container p {
-    font-size: 1.1em;
+    font-size: 1rem;
     margin-top: 10px;
     margin-bottom: 20px;
-    max-width: 800px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -34,7 +34,7 @@
 
 .project-card {
     background-color: rgb(255, 255, 255);
-    border: 1px solid #FFC107;
+    border: 1px solid white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -101,7 +101,8 @@
 }
 
 .project-description button {
-    color: black;
+    background-color: #FFC107;
+    color: white;
     border: 1.2px solid #FFC107;
     border-radius: 5px;
     padding: 7px 40px;
@@ -112,8 +113,8 @@
 }
 
 .project-description button:hover {
-    background-color: #F2BA12;
-    color: white;
+    background-color: white;
+    color: #F2BA12;
 }
 
 .project-card:hover {

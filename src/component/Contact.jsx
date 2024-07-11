@@ -12,7 +12,7 @@ import { FaYoutube } from "react-icons/fa6";
 const Contact = () => {
   return (
     
-     <div id="contact" className="my-[150px]  px-4 sm:px-[50px] lg:px-[100px]">
+     <div id="contact" className="my-[80px]  px-4 sm:px-[50px] lg:px-[100px]">
        <div
         className="relative bg-cover bg-center bg-no-repeat rounded-[20px] w-full h-[200px]"
         style={{ backgroundImage: `url(${banner})` }}
@@ -29,21 +29,21 @@ const Contact = () => {
       </div>
 
 
-      <div className="mt-[150px] flex flex-col justify-center items-center text-center font-poppins">
+      <div className="mt-[80px] flex flex-col justify-center items-center text-center font-poppins">
         <h1 className=" text-[30px] font-bold mb-4">Get in Touch, We're Here to <span className="text-[#FFC107]">Help</span></h1>
-        <p>Whether you have questions, need more information, or want to get involved, our team at the KCA is here to assist you. Reach out to us today!</p>
+        <p className="max-w-4xl">Whether you have questions, need more information, or want to get involved, our team at the KCA is here to assist you. Reach out to us today!</p>
       </div>
 
      <div className="flex flex-col justify-between items-center md:flex md:flex-row">
-     <div className="flex flex-col text-left mt-[100px] shadow-2xl pb-[20px]">
-        <img src={flight} alt="contact" className="w-[100%] h-[300px] rounded-t-[20px]" />
+     <div className="flex flex-col text-left mt-[80px] shadow-2xl pb-[20px]">
+        <img src={flight} alt="contact" className="w-[100%] h-[260px] rounded-t-[20px]" />
         <div className="flex items-center gap-[20px] mt-[20px] pl-[20px]">
         <FaPhoneAlt /><p>+ (250) 781 963 232</p>
         </div>
         <div className="flex items-center gap-[20px] mt-[20px] pl-[20px]">
         <MdEmail /><a href="#">info@kca.org</a>
         </div>
-        <div className="flex items-center gap-[20px] mt-[20px] text-[30px] pl-[20px]">
+        <div className="flex items-center gap-[20px] mt-[20px] text-[23px] pl-[20px]">
         <a href="#" className="hover:text-[#FFC107]"><FaXTwitter /></a>
         <a href="#" className="hover:text-[#FFC107]"><FaInstagram /></a>
         <a href="#" className="hover:text-[#FFC107]"><FaYoutube /></a>
@@ -52,7 +52,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-[50px]">
+      <div className="mt-[80px]">
         <form className="flex flex-col font-poppins justify-center items-center text-center px-[20px] py-[30px] rounded-[10px] shadow-2xl">
           <input type="text" placeholder="Enter your names.." className="px-[10px] py-[10px] border border-[#adadad] rounded-[5px] mb-[20px] outline-[#FFC107] w-full" />
           <input type="text" placeholder="Enter your email.." className="px-[10px] py-[10px] border border-[#adadad] rounded-[5px] mb-[20px] outline-[#FFC107] w-full" />

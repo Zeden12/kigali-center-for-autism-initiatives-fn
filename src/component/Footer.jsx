@@ -62,19 +62,19 @@ const Footer = () => {
           </div>
           <div className="contact-footer-icons">
             <div className="icon">
-              <FontAwesomeIcon icon={faFacebook} />
-            </div>
-            <div className="icon">
               <FontAwesomeIcon icon={faTwitter} />
             </div>
             <div className="icon">
               <FontAwesomeIcon icon={faInstagram} />
             </div>
             <div className="icon">
+              <FontAwesomeIcon icon={faYoutube} />
+            </div>
+            <div className="icon">
               <FontAwesomeIcon icon={faLinkedin} />
             </div>
             <div className="icon">
-              <FontAwesomeIcon icon={faYoutube} />
+              <FontAwesomeIcon icon={faFacebook} />
             </div>
           </div>
         </div>

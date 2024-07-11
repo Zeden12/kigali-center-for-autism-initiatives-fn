@@ -11,7 +11,7 @@ const BottomNav = () => {
   }
 
   return (
-    <div className="sticky bg-[#E9E9E9] top-[50px] z-10 flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-[7px]">
+    <div className="sticky bg-[#E9E9E9] top-[50px] z-10 flex justify-between items-center px-4 sm:px-[50px] lg:px-[100px] py-[15px]">
             <h1 className="font-poppins font-bold text-[20px]">
                 KCA
             </h1>
@@ -26,7 +26,7 @@ const BottomNav = () => {
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#about">Who We Are</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#project">Projects</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Blog</a></li>
-                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Contact Us</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#contact">Contact Us</a></li>
                     <li className="my-4 lg:my-0  lg:hidden bg-[#FFC107] text-white font-outfit px-[30px] py-[7px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]"><a href="#">Donate</a></li>
                 </ul>
             </nav>

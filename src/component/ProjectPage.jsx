@@ -2,7 +2,8 @@ import React from "react";
 
 const ProjectPage = () => {
   return (
-    <div id="projectpage" className="max-w-sm rounded overflow-hidden shadow-lg">
+   
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <img
         className="w-full"
         src="https://source.unsplash.com/random"
@@ -34,6 +35,7 @@ const ProjectPage = () => {
         <button className="bg-red-400 rounded-full px-10 py-2  text-white font-bold hover:bg-red-900 mt-3">Hint me</button>
       </div>
     </div>
+   
   );
 };
 

@@ -1,23 +1,22 @@
 import React from 'react'
 import TopNav from "./component/TopNav.jsx"
 import BottomNav from "./component/BottomNav.jsx"
-import Hero from "./component/Hero.jsx"
-import About from "./component/About.jsx"
 import Footer from './component/Footer.jsx'
-import ProjectPart from './component/ProjectPart.jsx'
-import Contact from './component/Contact.jsx'
+import LandingPage from './component/LandingPage.jsx'
+import ProjectPage from './component/ProjectPage.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 
 const App = () => {
   return (
-   <div>
+   <BrowserRouter>
     <TopNav />
     <BottomNav />
-    <Hero />
-    <About />
-    <ProjectPart />
-    <Contact />
+    <Routes>
+    <Route path='/' element={<LandingPage />} />
+    <Route path='/propage' element={<ProjectPage />} />
+    </Routes>
     <Footer />
-   </div>
+   </BrowserRouter>
   )
 }
 

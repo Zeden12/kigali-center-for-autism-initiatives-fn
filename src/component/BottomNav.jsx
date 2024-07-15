@@ -22,7 +22,7 @@ const BottomNav = () => {
                             <IoClose className='text-[30px]'/>
                         </button>
                     </li>
-                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#hero">Home</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="/">Home</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#about">Who We Are</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#project">Projects</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Blog</a></li>

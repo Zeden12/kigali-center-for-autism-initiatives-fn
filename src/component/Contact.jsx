@@ -12,7 +12,7 @@ import { FaYoutube } from "react-icons/fa6";
 const Contact = () => {
   return (
     
-     <div id="contact" className="my-[80px]  px-4 sm:px-[50px] lg:px-[100px]">
+     <div id="contact" className="my-[40px]  px-4 sm:px-[50px] lg:px-[100px]">
        <div
         className="relative bg-cover bg-center bg-no-repeat rounded-[20px] w-full h-[200px]"
         style={{ backgroundImage: `url(${banner})` }}

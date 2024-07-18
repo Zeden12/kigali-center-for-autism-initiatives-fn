@@ -9,9 +9,11 @@ import '../App.css'
 
 const Partners = () => {
   return (
-    <div className='Part1 flex flex-col justify-center items-center  '>
-      <h1>Our <span className='text-[#FFC107] font-poppins'> partners</span></h1>
-      <p>More than 40  companies and institutions that trusts us over the year </p>
+    <div className='Part1 flex flex-col justify-center items-center  text-center'>
+      <h1 className="text-2xl md:text-3xl font-bold mb-4 mt-4">
+        Our <span className="text-[#FFC107]">Esteemed </span> Partners
+      </h1>
+      <p className="md:text-lg mb-2 max-w-3xl mx-auto text-lg">We proudly collaborate with over 10 companies and institutions in our fight against autism. Join us in making a difference! </p>
 
     <div className= 'grid grid-cols-5  mt-[80px] gap-[40px]' >
     <img src={HelloWorld} alt="" className='w-[90px]' />

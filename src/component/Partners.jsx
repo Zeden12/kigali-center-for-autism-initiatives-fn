@@ -15,7 +15,7 @@ const Partners = () => {
       </h1>
       <p className="md:text-lg mb-2 max-w-3xl mx-auto text-lg">We proudly collaborate with over 10 companies and institutions in our fight against autism. Join us in making a difference! </p>
 
-    <div className= 'grid grid-cols-5  mt-[80px] gap-[40px]' >
+    <div className= 'grid grid-cols-6  mt-[80px] gap-[40px]' >
     <img src={HelloWorld} alt="" className='w-[90px]' />
     <img src={Autism} alt=""     className='w-[90px]'/> 
     <img src={HelloWorld} alt=""  className='w-[90px]'/>
@@ -25,6 +25,8 @@ const Partners = () => {
     <img src={RBD} alt=""    className='w-[90px]'/>
     <img src={RSSB} alt=""  className='w-[90px]'/>
     <img src={WaterAid} alt="" className='w-[90px]'/>
+    <img src={HelloWorld} alt="" className='w-[90px]'/>
+    <img src={HelloWorld} alt="" className='w-[90px]'/>
     <img src={HelloWorld} alt="" className='w-[90px]'/>
     </div>
       

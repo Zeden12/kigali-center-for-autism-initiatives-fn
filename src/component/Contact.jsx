@@ -1,4 +1,3 @@
-import React from "react";
 import banner from "../assets/banner.svg";
 import flight from "../assets/flight.svg";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -30,7 +29,7 @@ const Contact = () => {
 
 
       <div className="mt-[80px] flex flex-col justify-center items-center text-center font-poppins">
-        <h1 className=" text-[30px] font-bold mb-4">Get in Touch, We're Here to <span className="text-[#FFC107]">Help</span></h1>
+        <h1 className=" text-[30px] font-bold mb-4">Get in Touch, We are Here to <span className="text-[#FFC107]">Help</span></h1>
         <p className="max-w-4xl">Whether you have questions, need more information, or want to get involved, our team at the KCA is here to assist you. Reach out to us today!</p>
       </div>
 

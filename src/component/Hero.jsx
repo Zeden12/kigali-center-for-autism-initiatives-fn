@@ -1,4 +1,3 @@
-import React from 'react'
 import kcaBg from '../assets/kcaBg.svg'
 
 const Hero = () => {
@@ -33,7 +32,7 @@ const Hero = () => {
             </p>
             <div className='flex gap-[20px] mt-[30px]'>
                 <button className='bg-[#FFC107] text-[13px] text-white px-[20px] py-[10px] rounded-[5px] hover:bg-transparent hover:border hover:border-[#FFC107] hover:text-[#FFC107]'>Donate now</button>
-                <button className='bg-transparent border border-[#FFC107] text-[#FFC107] text-[13px] px-[20px] py-[10px] rounded-[5px] hover:bg-[#FFC107] hover:text-white'>Projects</button>
+                <button className='bg-transparent border border-[#FFC107] text-[#FFC107] text-[13px] px-[20px] py-[10px] rounded-[5px] hover:bg-[#FFC107] hover:text-white'>What we do</button>
             </div>
          </div>
     </div>

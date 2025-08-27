@@ -23,9 +23,10 @@ const BottomNav = () => {
                         </button>
                     </li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="/">Home</a></li>
-                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#about">Who We Are</a></li>
-                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#project">Projects</a></li>
-                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Blog</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#about">About Us</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#programs">What We Do</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#project">Events & Trainings</a></li>
+                    <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#">Blog & News</a></li>
                     <li className="my-4 lg:my-0 hover:text-[#FFC107]"><a href="#contact">Contact Us</a></li>
                     <li className="my-4 lg:my-0  lg:hidden bg-[#FFC107] text-white font-outfit px-[30px] py-[7px] rounded-[10px] hover:bg-white hover:border-[1px] hover:border-[#FFC107] hover:text-[#FFC107]"><a href="#">Donate</a></li>
                 </ul>

@@ -21,7 +21,7 @@ const WhatWeDo = () => {
   const programs = [
     {
       id: 1,
-      title: "Consultancy & Therapy",
+      title: "Consultation",
       icon: <FaHandsHelping className="text-3xl text-[#FFC107]" />,
       description: "Professional consultancy and evidence-based therapy services tailored for individuals with autism.",
       image: consultancyImg,

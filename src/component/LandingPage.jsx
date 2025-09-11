@@ -1,10 +1,11 @@
 import Hero from './Hero'
 import About from './About'
-import ProjectPart from './ProjectPart'
+import EventsTrainings from './EventsTrainings'
 import Partners from'./Partners'
 import Contact from './Contact'
 import AutismExplanation from './AutismExplanation'
 import WhatWeDo from './WhatWeDo'
+import BlogsNews from './BlogsNews'
 
 const LandingPage = () => {
   return (
@@ -13,7 +14,8 @@ const LandingPage = () => {
         <AutismExplanation />
         <About />
         <WhatWeDo />
-        <ProjectPart />
+        <EventsTrainings />
+        <BlogsNews />
         <Contact />
         <Partners/>
        

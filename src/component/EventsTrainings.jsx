@@ -1,6 +1,10 @@
 import { useState } from "react";
-import about1 from "../assets/about1.svg";
 import { FaArrowRight, FaCalendarAlt, FaMapMarkerAlt, FaClock, FaUsers } from "react-icons/fa";
+
+import aWorkshop from "../assets/workshop.jpg";
+import Therapy from "../assets/therapy.jpg";
+import Parents from "../assets/parents.jpg";
+
 
 const EventsTrainings = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -10,7 +14,7 @@ const EventsTrainings = () => {
     {
       id: 1,
       title: "Autism Awareness Workshop",
-      image: about1,
+      image: aWorkshop,
       date: "August 1, 2024",
       time: "9:00 AM - 4:00 PM",
       location: "Kigali Convention Center",
@@ -24,7 +28,7 @@ const EventsTrainings = () => {
     {
       id: 2,
       title: "Therapy Techniques Training",
-      image: about1,
+      image: Therapy,
       date: "September 15, 2024",
       time: "10:00 AM - 3:00 PM",
       location: "Online Event",
@@ -38,7 +42,7 @@ const EventsTrainings = () => {
     {
       id: 3,
       title: "Parent Support Group Meeting",
-      image: about1,
+      image: Parents,
       date: "October 5, 2024",
       time: "2:00 PM - 5:00 PM",
       location: "KCA Community Center",

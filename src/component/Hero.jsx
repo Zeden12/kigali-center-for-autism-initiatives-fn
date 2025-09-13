@@ -144,6 +144,15 @@ const Hero = () => {
                 </select>
               </div>
 
+              <div className="bg-gray-50 p-4 rounded-lg mb-6">
+                <h4 className="font-semibold text-gray-700 mb-3">Other Ways to Donate</h4>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p><strong>Bank Transfer:</strong> KCA Account #: 000123456789</p>
+                  <p><strong>Mobile Money:</strong> +250 784 499 986 (MTN)</p>
+                  <p><strong>In Person:</strong> Visit our office at KG 06 Street Gasanze, Kigali</p>
+                </div>
+              </div>
+
               <div className="flex items-center mb-6">
                 <input 
                   type="checkbox" 

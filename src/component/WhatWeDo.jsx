@@ -2,16 +2,11 @@ import { useState } from 'react';
 import { FaArrowRight, FaHandsHelping, FaFlask, FaUsers, FaChartLine } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-// Import images (you'll need to add these to your assets folder)
-// import consultancyImg from '../assets/consultancy.jpg';
-// import researchImg from '../assets/research.jpg';
-// import outreachImg from '../assets/outreach.jpg';
+import consultancyImg from '../assets/consultancy.jpg';
+import researchImg from '../assets/research.jpg';
+import outreachImg from '../assets/community.jpg';
 // import impactImg from '../assets/impact.jpg';
 
-// For demonstration, I'll use placeholder images from a service
-const consultancyImg = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
-const researchImg = "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
-const outreachImg = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
 const impactImg = "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
 
 const WhatWeDo = () => {

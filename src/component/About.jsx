@@ -2,18 +2,11 @@ import { useState, useEffect } from 'react';
 import { FaArrowRight, FaQuoteLeft, FaAward, FaUsers, FaHeart, FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
-// Import images (replace with your actual images)
-// import slide1 from '../assets/slide1.jpg';
-// import slide2 from '../assets/slide2.jpg';
-// import slide3 from '../assets/slide3.jpg';
-// import team1 from '../assets/team1.jpg';
-// import team2 from '../assets/team2.jpg';
-// import team3 from '../assets/team3.jpg';
+import slide2 from '../assets/autismcommunity.jpg';
+import slide1 from '../assets/autismindividual.jpg';
+import slide3 from '../assets/autismresearch.jpg';
+import Founder from '../assets/founder.jpg';
 
-// Placeholder images from Unsplash for demonstration
-const slide1 = "https://images.unsplash.com/photo-1549056572-75914d6d7e1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
-const slide2 = "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
-const slide3 = "https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
 const team1 = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
 const team2 = "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
 const team3 = "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
@@ -31,21 +24,24 @@ const About = () => {
       image: slide1,
       title: "Empowering Individuals with Autism",
       description: "Providing comprehensive support and resources to help those with autism reach their full potential",
-      cta: "Learn About Our Programs"
+      cta: "Learn About Our Programs",
+      target: "mission"
     },
     {
       id: 2,
       image: slide2,
       title: "Building Inclusive Communities",
       description: "Working together to create understanding and acceptance for people with autism",
-      cta: "See Our Community Work"
+      cta: "See Our Community Work",
+      target: "community"
     },
     {
       id: 3,
       image: slide3,
       title: "Advancing Research & Awareness",
       description: "Pioneering new approaches and spreading knowledge about autism spectrum disorders",
-      cta: "Explore Our Research"
+      cta: "Explore Our Research",
+      target: "research"
     }
   ];
 
@@ -65,40 +61,57 @@ const About = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  // Founder information with provided data
+  // FULL founder info
   const founderInfo = {
     name: "Dr. BAZIGA Vedaste",
     title: "Senior Lecturer & Head of Mental Health Nursing Department",
-    image: team1,
+    image: Founder,
     contact: {
       phone: "+250784499986",
       email: "vedastebaziga2@gmail.com",
       email2: "v.baziga@ur.ac.rw"
     },
     bio: "Dr. Baziga Vedaste is a Registered Mental Health Nurse and Senior Lecturer at University of Rwanda. He is Head of Mental Health Nursing Department in University of Rwanda- College of Medicine and Health Sciences, in School of Nursing and Midwifery.",
+    fullBio: `Dr Baziga Vedaste is Registered Mental Health Nurse and Senior Lecturer at University of Rwanda. 
+    He holds Advanced Diploma in Mental Health Nursing and Bachelor' Degree in Nursing Education from Kigali Health Institute, 
+    Master's Degree in Nursing (Mental Health) from University of KwaZulu Natal and PhD in Experimental Medicine from University of Tubingen. 
+    He is Head of Mental Health Nursing Department in University of Rwanda- College of Medicine and Health Sciences, in School of Nursing and Midwifery.`,
+    research: [
+      "Mental Health stigma",
+      "Community mental health",
+      "Autism spectrum disorders and other neurodevelopmental disorders"
+    ],
+    publications: [
+      "Uwingabiye, L., Baziga, V., Chironda G., Rajeswaran L. (2021). Assessment of knowledge, attitude and perceptions regarding kidney donation among nursing students at the University of Rwanda.",
+      "Baziga, V., Gasovya, A., Uwingabire, F. (2020). Local authorities' attitude towards people with mental illness in Musanze District, Rwanda. RJMHS 2(3). DOI: 10.4314/rjmhs.v2i3.5.",
+      "Baziga, V., Gasovya, A., Uwingabire, F. (2020). Community health workers' attitude towards people with mental illness: challenge of maternal mental health services. RJMHS 2(3). DOI: 10.4314/rjmhs.v2i3.3.",
+      "Baziga, V. (2017). Nurses Stigmatising Attitudes towards Persons with a Mental Disorder. JOJNHC 3(3). DOI: 10.19080/JOJNHC.2017.03.555613.",
+      "Baziga, V. (2017). Student Nurses' Stigmatising Attitudes towards Persons with a Mental Disorder in Rwanda. Rwanda Journal Series F. DOI: 10.4314/rj.v4i1.3F.",
+      "Baziga, V., Mandy A.A. (2016). 'IN PRINCIPLE, YES, IN APPLICATION, NO': Rwandan Nurses' Support for Integration of Mental Health Services. Africa J. of Nursing and Midwifery. 18(1)."
+    ]
   };
 
   const teamMembers = [
     {
-      name: "Marie Uwase",
+      name: "UWURUKUNDO BAZIGA Mireille",
       role: "Head Therapist",
       image: team1,
       bio: "Specialized in occupational therapy with 8 years of experience working with children with autism."
     },
     {
-      name: "Jean Paul Habimana",
+      name: "NIYOGISUBIZO Diedonne",
       role: "Education Coordinator",
       image: team2,
       bio: "Developed inclusive education programs implemented in 15 schools across Rwanda."
     },
     {
-      name: "Grace Mukandoli",
+      name: "HAGUMA KWIZERA Ernest",
       role: "Community Outreach Manager",
       image: team3,
       bio: "Led awareness campaigns reaching over 10,000 community members in the past year."
     },
     {
-      name: "Dr. Eric Mutabazi",
+      name: "Dr. BANKUNDIYE Mechtilde",
       role: "Clinical Psychologist",
       image: team1,
       bio: "Specializes in behavioral interventions and assessment for autism spectrum disorders."
@@ -110,7 +123,7 @@ const About = () => {
       bio: "Expert in communication development and AAC systems for non-verbal individuals."
     },
     {
-      name: "Peter Ndayambaje",
+      name: "RUKUNDO BAZIGA Irene Serge",
       role: "Research Coordinator",
       image: team3,
       bio: "Leads data analysis and program evaluation for our autism intervention programs."
@@ -143,9 +156,12 @@ const About = () => {
               <div className="text-center text-white max-w-2xl px-4">
                 <h2 className="font-poppins text-3xl md:text-4xl font-bold mb-4">{slide.title}</h2>
                 <p className="font-poppins text-xl mb-6">{slide.description}</p>
-                <button className="bg-[#FFC107] text-white font-poppins font-medium py-3 px-8 rounded-lg hover:bg-[#E6AC00] transition-colors">
-                  {slide.cta}
-                </button>
+                <button onClick={() => {
+                  const element = document.getElementById(slide.target);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }} className="bg-[#FFC107] text-white font-poppins font-medium py-3 px-8 rounded-lg hover:bg-[#E6AC00] transition-colors">{slide.cta}</button>
               </div>
             </div>
           </div>
@@ -181,7 +197,7 @@ const About = () => {
         <h1 className='font-poppins text-[30px] font-bold mb-4'>Who We <span className='text-[#FFC107]'>Are</span></h1>
         <p className='font-poppins max-w-3xl'>
           We are Kigali Center for Autism Initiatives - KCA, Our organization strives to create a world where people with autism can thrive and reach their fullest potential.
-          Since 2010, wehave been dedicated to providing comprehensive support, resources, and advocacy for the autism community in Rwanda.
+          Since 2010, we have been dedicated to providing comprehensive support, resources, and advocacy for the autism community in Rwanda.
         </p>
       </div>
 
@@ -249,7 +265,7 @@ const About = () => {
           <div className='md:w-2/3'>
             <h2 className='font-poppins text-2xl font-bold mb-2'>Meet Our Founder</h2>
             <h3 className='font-poppins text-lg text-[#FFC107] mb-4'>{founderInfo.name}</h3>
-            <p className='font-poppins text-gray-600 mb-4'>{founderInfo.title}</p>
+            <p className='font-poppins text-[#FFC107] mb-4'>{founderInfo.title}</p>
             
             <div className='mb-4 flex'>
               <FaQuoteLeft className='text-[#FFC107] mr-2 text-xl mt-1' />
@@ -259,12 +275,6 @@ const About = () => {
             </div>
             
             <p className='font-poppins text-gray-600 mb-4'>{founderInfo.bio}</p>
-            
-            <div className='mb-4'>
-              <h4 className='font-poppins font-bold mb-2'>Contact:</h4>
-              <p className='font-poppins text-gray-600'>{founderInfo.contact.phone}</p>
-              <p className='font-poppins text-gray-600'>{founderInfo.contact.email}</p>
-            </div>
             
             <button 
               onClick={() => openModal('founder')}
@@ -393,20 +403,56 @@ const About = () => {
         </Modal>
       )}
 
+      {activeModal === 'vision' && (
+        <Modal onClose={closeModal} title="Our Vision">
+          <p className='font-poppins text-gray-700 mb-4'>
+            We envision a world where individuals with autism are fully accepted, valued members of society who have access to all the resources and opportunities they need to thrive.
+          </p>
+          <p className='font-poppins text-gray-700'>
+            This includes inclusive education systems, accessible healthcare, employment opportunities, and communities that celebrate neurodiversity rather than viewing it as a deficit.
+          </p>
+        </Modal>
+      )}
+
+      {activeModal === 'values' && (
+        <Modal onClose={closeModal} title="Our Values">
+          <ul className='font-poppins text-gray-700 list-disc list-inside space-y-2'>
+            <li><strong>Compassion:</strong> We approach every individual and family with empathy, understanding, and kindness.</li>
+            <li><strong>Inclusion:</strong> We believe in creating environments where everyone feels welcomed, valued, and respected.</li>
+            <li><strong>Innovation:</strong> We continuously seek new and better ways to support individuals with autism.</li>
+            <li><strong>Collaboration:</strong> We work together with families, professionals, and communities to achieve the best outcomes.</li>
+            <li><strong>Advocacy:</strong> We speak up for the rights and needs of individuals with autism at all levels of society.</li>
+          </ul>
+        </Modal>
+      )}
+
       {activeModal === 'founder' && (
         <Modal onClose={closeModal} title={founderInfo.name}>
-          <p className='font-poppins text-gray-700 mb-4'>{founderInfo.bio}</p>
+          <div className='mb-4'>
+            <h4 className='font-poppins font-bold mb-2'>Academic Rank:</h4>
+            <p className='font-poppins text-gray-600'>Senior Lecturer</p>
+          </div>
           <div className='mb-4'>
             <h4 className='font-poppins font-bold mb-2'>Contact Information:</h4>
             <p className='font-poppins text-gray-600'>Phone: {founderInfo.contact.phone}</p>
             <p className='font-poppins text-gray-600'>Email: {founderInfo.contact.email}</p>
             <p className='font-poppins text-gray-600'>Email: {founderInfo.contact.email2}</p>
           </div>
-          <div className='flex'>
-            <FaQuoteLeft className='text-[#FFC107] mr-2 text-xl mt-1' />
-            <p className='font-poppins italic text-gray-700'>
-              Every individual with autism has unique gifts to share with the world. Our mission is to help them discover and nurture these gifts.
-            </p>
+          <div className='mb-4'>
+            <h4 className='font-poppins font-bold mb-2'>Biography:</h4>
+            <p className='font-poppins text-gray-700 whitespace-pre-line'>{founderInfo.fullBio}</p>
+          </div>
+          <div className='mb-4'>
+            <h4 className='font-poppins font-bold mb-2'>Research Interests:</h4>
+            <ul className='list-disc list-inside text-gray-700'>
+              {founderInfo.research.map((item, i) => <li key={i}>{item}</li>)}
+            </ul>
+          </div>
+          <div className='mb-4'>
+            <h4 className='font-poppins font-bold mb-2'>Key Publications:</h4>
+            <ul className='list-disc list-inside text-gray-700 space-y-2'>
+              {founderInfo.publications.map((pub, i) => <li key={i}>{pub}</li>)}
+            </ul>
           </div>
         </Modal>
       )}
@@ -419,7 +465,7 @@ const About = () => {
 const Modal = ({ onClose, title, children }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
             <h3 className="font-poppins font-bold text-2xl text-[#FFC107]">

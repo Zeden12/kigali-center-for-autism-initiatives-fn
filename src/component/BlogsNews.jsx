@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { FaCalendarAlt, FaUser, FaArrowRight, FaPlayCircle } from 'react-icons/fa';
 
+import blogImage1 from "../assets/autismresearch.jpg";
+import autismAwareness from "../assets/autismawareness.jpg";
+
 // Placeholder images (replace with your actual images)
-const blogImage1 = "https://images.unsplash.com/photo-1549056572-75914d6d7e1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
 const blogImage2 = "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
 const blogImage3 = "https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
 const videoThumbnail = "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80";
@@ -18,7 +20,7 @@ const BlogsNews = () => {
       excerpt: "Learn about the different aspects of autism spectrum disorder and how to support individuals effectively.",
       image: blogImage1,
       date: "March 15, 2024",
-      author: "Dr. Jane Smith",
+      author: "Dr. Vedaste BAZIGA",
       category: "education",
       type: "article",
       content: "Autism Spectrum Disorder (ASD) is a complex developmental condition that involves persistent challenges in social interaction, speech and nonverbal communication, and restricted/repetitive behaviors. The effects of ASD and the severity of symptoms are different in each person. ASD is called a 'spectrum' disorder because people with ASD can have a range of symptoms. People with ASD might have problems talking with you, or they might not look you in the eye when you talk to them..."
@@ -49,7 +51,7 @@ const BlogsNews = () => {
       id: 4,
       title: "Autism Awareness Month: Activities and Events",
       excerpt: "Join us for a month of awareness-raising events, workshops, and community activities throughout April.",
-      image: blogImage1,
+      image: autismAwareness,
       date: "March 28, 2024",
       author: "Events Team",
       category: "events",
